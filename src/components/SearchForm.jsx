@@ -4,7 +4,7 @@ const SearchForm = ({setSearchText}) => {
 
   const[values,setValues] = useState("");
 
-  /* Što god da je upisano u input fieldu spremi u searchText(username) prop i vrati values prop nazad na prazan string. Ionako što renderiram drugi komponent nakon što sam spremio values u searchText(username) ovo vraćanje sam napravio sam zato što sam mogao. Nije zapravo protrebno uopće vraćati values u prazan string. Barem mislim da nije potrebno. */
+  /* Što god da je upisano u input fieldu spremi u searchText(username) prop i vrati values prop nazad na prazan string. Ionako što renderiram drugi komponent nakon što sam spremio values u searchText(username) ovo vraćanje sam napravio sam zato što sam mogao. Nije zapravo potrebno uopće vraćati values u prazan string. Barem mislim da nije potrebno. */
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchText(values);
