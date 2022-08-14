@@ -4,7 +4,14 @@ import SearchForm from "./components/SearchForm";
 import User from "./components/User";
 
 function App() {
-  const [user,setUser] = useState(null);
+  const [user,setUser] = useState(null); 
+  /* 
+  Kada je variabla NULL to znači da nema nikakvu vrijednost. 
+  Ovo je ko da sam napisao const[user,setUser] = setState([]). 
+  Kod ovoga je isto da li sam koristio NULL ili praznu listu jer kada dobijemo podatke nazad iz API-a uvijek će podatci biti vraćeni kao objekt.
+  Koristio sam NULL zbog lakše i jednostavnije provjere dolje kod returna. 
+  Može se koristiti prazan objekt ili lista i onda provjeriti pomoću user.length > 0 i sve bi uglavnom bilo isto. 
+   */
   const [searchText,setSearchText] = useState("");
 
 
